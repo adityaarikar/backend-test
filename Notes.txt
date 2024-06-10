@@ -1,0 +1,4 @@
+1. .gitkeep => this file is use to tract empty folder as well (Normally empty folders are not tracked by the git).
+
+2. type: "module" => in node we can import files in two ways one it commonjs(require keyword) 
+                        and another is the module(import keyword)
