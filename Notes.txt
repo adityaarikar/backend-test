@@ -2,3 +2,25 @@
 
 2. type: "module" => in node we can import files in two ways one it commonjs(require keyword) 
                         and another is the module(import keyword)
+
+3. Folder structure and initial projecty setup => 
+                    a. .gitignore file => to ignore the files and folder which we want to be ignored by git
+                    b. .env => environmental veriable file to store out important veriable which we dont want to share publically
+                    c. .prettier and .prettierignore => this is used to follow formating standards throught the project and ignore the folders or files which we dont want to format
+                    b. public folder => used to keep the files or images or videos which we are going to use throught the project
+                    e. src folder =>
+                                    1. Controllers (folder)
+                                    2. db (folder)
+                                    3. middlewares (folder)
+                                    4. models (folder)
+                                    5. routes (folder)
+                                    6. utils (folder)
+                                    7. files => app.js, constants.js and index.js
+
+4. After the folder structure we are going to configure the database
+                1. We will keep the database connection string in to our .env file and store our DB name in constants file
+                2. There are two ways to connect to database (As database is the main thing which we are going to need as application starts so we are connecting it in starting of our project that is index.js file)
+                        a. either write database connection in the index.js file
+                        b. or write the code in seperate db index.js file and use that function in main index.js (Good practice to follow)
+                3. Always remember to add the database connection in try catch because it can have a error so to handle that we use try catch.We can also use promices
+                4. 😉 database is always in another continent so use async await because it takes time to estiblish the connection 
