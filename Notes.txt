@@ -24,3 +24,10 @@
                         b. or write the code in seperate db index.js file and use that function in main index.js (Good practice to follow)
                 3. Always remember to add the database connection in try catch because it can have a error so to handle that we use try catch.We can also use promices
                 4. 😉 database is always in another continent so use async await because it takes time to estiblish the connection 
+
+5. Next setp is to write our custom APIs get responce and error handling =>
+                1. for that we need two packages cors and cookie-parser 
+                2. cors is used to set the cross origin resource sharing where we tell our backend that share resource to the request comming specific origin and we give our front end URL
+                3. then we set some limits to data accepted in json format or url encodings
+                4. then we also use cookie parser to perform CRUD operations on cookies
+                5. then there is a concept of middlewares which act as a middle thing between backend and api request. For example if user hits request we check if user is logedin or not if user is admin or not this is a middleware. Middleware has 4 arguments (err, req, res, next)
